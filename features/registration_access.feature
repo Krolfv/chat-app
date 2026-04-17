@@ -34,3 +34,8 @@ Scenario: [EXPERIMENTAL] Recuperação de conta via SMS
     When eu solicito a recuperação via número de celular
     Then o sistema deve enviar um código de verificação por SMS
     And permitir a criação de uma nova senha temporária
+
+Scenario: [EXPERIMENTAL] Validação de segurança por e-mail
+    Given que o sistema detectou um acesso de um novo dispositivo
+    When eu confirmo minha identidade através do link enviado por e-mail
+    Then o sistema deve autorizar o novo dispositivo para uso
