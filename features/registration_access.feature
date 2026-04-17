@@ -23,7 +23,7 @@ Scenario: Cadastro com e-mail já existente
     When eu tento registrar um e-mail que já possui conta
     Then o sistema deve exibir um alerta de "E-mail já cadastrado"
 
-  Scenario: Login com senha incorreta
+Scenario: Login com senha incorreta
     Given que possuo uma conta cadastrada
     When eu informo meu e-mail correto mas a senha errada
     Then o sistema deve impedir o acesso
