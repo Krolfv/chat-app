@@ -10,7 +10,6 @@ Scenario: Cadastro de novo usuário com sucesso
     And insiro telefone "(88) 988888888"
     And insiro nome de usuário "joaosilva"
     And insiro senha "Segura@123"
-    And senha com mais de 6 caracteres 
     And clico no botão "Cadastre-se"
     Then o sistema exibe mensagem "Cadastro realizado com sucesso"
     And me redireciona para tela de login
